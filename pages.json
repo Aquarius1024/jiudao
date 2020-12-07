@@ -1,16 +1,45 @@
 {
-	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
-		{
-			"path": "pages/index/index",
-			"style": {
-				"navigationBarTitleText": "uni-app"
-			}
-		}
-	],
-	"globalStyle": {
-		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
-	}
+  "pages": [{
+    "path": "pages/classic/classic",
+    "style": {
+      "navigationBarTitleText": "流行"
+    }
+  }, {
+    "path": "pages/book/book",
+    "style": {
+      "navigationBarTitleText": "书单"
+    }
+  }, {
+    "path": "pages/like/like",
+    "style": {
+      "navigationBarTitleText": "喜欢"
+    }
+  }],
+
+  "tabBar": {
+    "selectedColor": "#2b2b2b",
+    "list": [{
+      "text": "流行",
+      "pagePath": "pages/classic/classic",
+      "iconPath": "static/images/tab/classic.png",
+      "selectedIconPath": "static/images/tab/classic@highlight.png"
+    }, {
+      "text": "书单",
+      "pagePath": "pages/book/book",
+      "iconPath": "static/images/tab/book.png",
+      "selectedIconPath": "static/images/tab/book@highlight.png"
+    }, {
+      "text": "喜欢",
+      "pagePath": "pages/like/like",
+      "iconPath": "static/images/tab/my.png",
+      "selectedIconPath": "static/images/tab/my@highlight.png"
+    }]
+  },
+
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  }
 }
