@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "流行",
+  "usingComponents": {
+    "image-button": "/components/ImageButton/ImageButton",
+    "epsoide": "/components/Epsoide/Epsoide",
+    "like": "/components/Like/Like",
+    "movie": "/pages/classic/components/movie/movie",
+    "navi": "/components/Navi/Navi",
+    "music": "/pages/classic/components/music/music"
+  }
+}

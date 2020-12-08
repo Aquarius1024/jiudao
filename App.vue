@@ -21,11 +21,12 @@
   .page-wrap {
     height: 100%;
     box-sizing: border-box;
-    border: 1px solid #007AFF;
+    /* border: 1px solid #007AFF; */
+    flex-direction: column;
+    display: flex;
   }
   
   .page-wrap .page-content {
-    flex-direction: column;
-    display: flex;
+    flex: 1;
   }
 </style>

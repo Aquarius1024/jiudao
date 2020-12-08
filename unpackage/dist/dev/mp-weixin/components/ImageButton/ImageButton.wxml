@@ -1,0 +1,1 @@
+<button class="image-btn" open-type="{{openType}}" type="default" data-event-opts="{{[['getuserinfo',[['handleGetUserInfo',['$event']]]]]}}" bindgetuserinfo="__e"><image src="{{imageSrc}}" mode="aspectFit"></image></button>

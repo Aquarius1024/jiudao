@@ -1,0 +1,21 @@
+.image-btn {
+  background-color: #FFFFFF;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  padding: 10rpx;
+}
+.image-btn image {
+  width: 56rpx;
+  height: 56rpx;
+}
+.image-btn::after {
+  border: 0;
+}
+

@@ -1,0 +1,31 @@
+.like-wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  box-sizing: border-box;
+  height: 64rpx;
+}
+.like-wrap .img-wrap {
+  width: 40rpx;
+  -webkit-flex-shrink: 0;
+          flex-shrink: 0;
+}
+.like-wrap .img-wrap image {
+  width: 36rpx;
+  height: 32rpx;
+}
+.like-wrap .like-text {
+  top: -8rpx;
+  color: #999;
+  font-size: 28rpx;
+  position: relative;
+  -webkit-align-self: flex-start;
+          align-self: flex-start;
+}
+

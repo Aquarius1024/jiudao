@@ -1,0 +1,27 @@
+.movie-wrap {
+  width: 100%;
+}
+.movie-wrap .image-wrap {
+  position: relative;
+}
+.movie-wrap .image-wrap .image-content {
+  width: 100%;
+  box-sizing: border-box;
+  height: 500rpx;
+}
+.movie-wrap .image-wrap .image-tag {
+  position: absolute;
+  left: 40rpx;
+  bottom: -72rpx;
+  width: 48rpx;
+  height: 140rpx;
+  z-index: 100;
+}
+.movie-wrap .movie-content {
+  margin-top: 140rpx;
+  box-sizing: border-box;
+  padding: 0 80rpx;
+  line-height: 1.5;
+  color: #333;
+}
+

@@ -1,0 +1,49 @@
+.epsoide-wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+          align-items: flex-end;
+  line-height: 1;
+  padding: 24rpx;
+}
+.epsoide-wrap .epsoide-index {
+  font-size: 34rpx;
+  box-sizing: border-box;
+}
+.epsoide-wrap .epsoide-index .index {
+  font-size: 64rpx;
+  font-weight: 600;
+}
+.epsoide-wrap .epsoide-index::after {
+  content: '';
+  display: inline-block;
+  height: 48rpx;
+  width: 0;
+  border: 2rpx solid #333;
+  margin: 0 12rpx;
+}
+.epsoide-wrap .epsoide-date {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 4rpx;
+}
+.epsoide-wrap .epsoide-date .month {
+  font-size: 30rpx;
+}
+.epsoide-wrap .epsoide-date .year {
+  font-size: 28rpx;
+}
+

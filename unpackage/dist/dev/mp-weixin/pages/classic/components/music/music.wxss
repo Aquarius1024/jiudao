@@ -1,0 +1,104 @@
+@-webkit-keyframes loop {
+0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+}
+25% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+}
+50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+}
+100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+}
+}
+@keyframes loop {
+0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+}
+25% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+}
+50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+}
+100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+}
+}
+.music-wrap {
+  width: 100%;
+}
+.music-wrap .image-wrap {
+  position: relative;
+  height: 500rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+}
+.music-wrap .image-wrap .image-tag {
+  position: absolute;
+  left: 40rpx;
+  bottom: -80rpx;
+  width: 48rpx;
+  height: 140rpx;
+  z-index: 100;
+}
+.music-wrap .image-wrap .music-btn {
+  width: 400rpx;
+  height: 400rpx;
+  border-radius: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  position: relative;
+}
+.music-wrap .image-wrap .music-btn .image-content {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+.music-wrap .image-wrap .music-btn .image-content.animation {
+  -webkit-animation: loop 8s linear infinite;
+          animation: loop 8s linear infinite;
+}
+.music-wrap .image-wrap .music-btn .btn {
+  position: absolute;
+  width: 200rpx;
+  height: 200rpx;
+  z-index: 99;
+}
+.music-wrap .image-wrap .music-btn .btn image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.music-wrap .music-content {
+  margin-top: 140rpx;
+  box-sizing: border-box;
+  padding: 0 80rpx;
+  line-height: 1.5;
+  color: #333;
+}
+

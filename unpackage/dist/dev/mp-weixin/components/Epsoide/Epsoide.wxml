@@ -1,0 +1,1 @@
+<view class="epsoide-wrap"><view class="epsoide-index">NO.<text class="index">{{tempIndex}}</text></view><view class="epsoide-date"><view class="month">{{month}}</view><view class="year">{{year}}</view></view></view>
