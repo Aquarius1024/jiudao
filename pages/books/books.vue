@@ -25,8 +25,8 @@
       </view>
     </scroll-view>
     <uni-popup type="bottom" ref="search">
-      <view :style="{height: winHeight, width: winWidth, paddingBottom: winBottom, border: '1px solid red', boxSizing: 'border-box'}">
-        <search @cancel="$refs.search.close()"></search>
+      <view :style="{height: winHeight, width: winWidth, paddingBottom: winBottom, boxSizing: 'border-box'}">
+        <search @cancel="hideSearchPage"></search>
       </view>
     </uni-popup>
 	</view>
@@ -87,6 +87,10 @@
 			showSearchPage() {
         // console.log('search', this.$refs.search)
         this.$refs.search.open()
+      },
+      
+      hideSearchPage() {
+        this.$refs.search.close()
       }
 		}
 	}

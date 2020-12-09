@@ -5,7 +5,7 @@
         <image style="width: 28rpx; height: 28rpx; margin-right: 12rpx; position: relative; top: 2rpx;" src="../../static/images/icon/search.png" mode="aspectFit"></image>
         <input style="font-size: 32rpx;" v-model="keyword" @input="handleInput" placeholder="搜索图书名称" type="text">
       </view>
-      <view class="search-cancel" @click="$emit('cancel')">取消</view>
+      <view class="search-cancel" @click="handleCancel">取消</view>
     </view>
     <view class="page-content search-wrap">
       <scroll-view scroll-y class="result-wrap" :class="{visible: keyword.length > 0}">
@@ -61,6 +61,11 @@
       // 跳转到详情
       gotoDetail(e) {
         console.log(e)
+      },
+      
+      handleCancel() {
+        this.keyword = ''
+        this.$emit('cancel')
       }
     }
   }
@@ -104,8 +109,10 @@
     position: absolute;
     bottom: 0;
     top: 0;
+    left: 0;
+    right: 0;
     display: none;
-    border: 1px solid blue;
+    // border: 1px solid blue;
     overflow: hidden;
     box-sizing: border-box;
     

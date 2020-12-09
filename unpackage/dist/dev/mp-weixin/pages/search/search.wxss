@@ -34,8 +34,9 @@
   position: absolute;
   bottom: 0;
   top: 0;
+  left: 0;
+  right: 0;
   display: none;
-  border: 1px solid blue;
   overflow: hidden;
   box-sizing: border-box;
 }

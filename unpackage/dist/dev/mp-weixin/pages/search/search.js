@@ -177,6 +177,11 @@ var timer = null;var _default =
     // 跳转到详情
     gotoDetail: function gotoDetail(e) {
       console.log(e);
+    },
+
+    handleCancel: function handleCancel() {
+      this.keyword = '';
+      this.$emit('cancel');
     } } };exports.default = _default;
 
 /***/ }),

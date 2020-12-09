@@ -101,11 +101,6 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  if (!_vm._isMounted) {
-    _vm.e0 = function($event) {
-      return _vm.$refs.search.close()
-    }
-  }
 }
 var recyclableRender = false
 var staticRenderFns = []
@@ -228,6 +223,10 @@ __webpack_require__.r(__webpack_exports__);
     showSearchPage: function showSearchPage() {
       // console.log('search', this.$refs.search)
       this.$refs.search.open();
+    },
+
+    hideSearchPage: function hideSearchPage() {
+      this.$refs.search.close();
     } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
