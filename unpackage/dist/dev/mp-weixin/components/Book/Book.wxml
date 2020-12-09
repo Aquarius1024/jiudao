@@ -1,0 +1,1 @@
+<view class="book-wrap"><view class="book-cover"><image src="{{cover}}" mode="widthFix"></image></view><view class="book-content"><view class="book-title">{{title}}</view><view class="book-author">{{author}}</view><view class="book-info"><text class="book-like">{{like+"喜欢"}}</text>·<text class="book-comment">{{comment+"短评"}}</text></view></view></view>

@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "书单",
+  "usingComponents": {
+    "uni-popup": "/components/uni-popup/uni-popup",
+    "book": "/components/Book/Book",
+    "search": "/pages/search/search"
+  }
+}

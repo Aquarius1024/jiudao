@@ -1,0 +1,57 @@
+.book-wrap {
+  height: 400rpx;
+  width: 280rpx;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 8rpx;
+  border-radius: 8rpx;
+}
+.book-wrap .book-cover {
+  height: 240rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.book-wrap .book-cover image {
+  width: 100%;
+  height: 100%;
+}
+.book-wrap .book-content {
+  color: #aaa;
+  height: 160rpx;
+  padding: 16rpx 8rpx;
+  position: relative;
+  box-sizing: border-box;
+}
+.book-wrap .book-content .book-title {
+  width: 100%;
+  color: #666;
+  font-size: 32rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.book-wrap .book-content .book-author {
+  font-size: 24rpx;
+}
+.book-wrap .book-content .book-info {
+  position: absolute;
+  right: 8rpx;
+  bottom: 16rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  font-size: 26rpx;
+}
+.book-wrap .book-content .book-info .book-like {
+  margin-right: 8rpx;
+}
+.book-wrap .book-content .book-info .book-comment {
+  margin-left: 8rpx;
+}
+

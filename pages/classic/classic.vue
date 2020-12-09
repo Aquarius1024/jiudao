@@ -1,21 +1,21 @@
 <template>
-	<view class="page-wrap">
-    <view class="page-content classic-wrap">
-      <view class="content-head">
-        <epsoide></epsoide>
-        <view class="head-right">
-          <like 
-            :isLike="list[current].isLike" 
-            :likeCount="list[current].likeCount"
-            @likeChange="handleLikeChange">
-          </like>
-          <!-- #ifdef MP-WEIXIN -->
-          <view style="margin-left: 40rpx;">
-            <image-button imageSrc="/static/images/icon/share.png" ></image-button>
-          </view>
-          <!-- #endif -->
+	<view class="page-wrap classic-wrap">
+    <view class="page-head classic-head">
+      <epsoide></epsoide>
+      <view class="head-right">
+        <like 
+          :isLike="list[current].isLike" 
+          :likeCount="list[current].likeCount"
+          @likeChange="handleLikeChange">
+        </like>
+        <!-- #ifdef MP-WEIXIN -->
+        <view style="margin-left: 40rpx;">
+          <image-button imageSrc="/static/images/icon/share.png" ></image-button>
         </view>
+        <!-- #endif -->
       </view>
+    </view>
+    <view class="page-content">
       <view class="content-main">
         <music 
           v-if="list[current].type === 'music'"
@@ -32,6 +32,7 @@
       </view>
       <view class="content-footer">
         <navi 
+          style="width: 100%;"
           :title="list[current].title"
           :isFirst="current === 0"
           :isLast="current === list.length-1"
@@ -98,7 +99,7 @@
 		},
 		methods: {
 			handleLikeChange(e) {
-        
+        console.log("like", e)
       },
       
       handleNaviChange(e) {
@@ -116,25 +117,23 @@
 </script>
 
 <style lang="less">
-  .content-head {
-    border-bottom: 1px solid #ddd;
-    box-shadow: 0 2rpx 16rpx #ddd;
-    flex-shrink: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    box-sizing: border-box;
-    padding-right: 20rpx;
-    
-    .head-right {
-      display: flex;
-      align-items: center;
-    }
-  }
   
   .classic-wrap {
     position: relative;
     // border: 1px solid red;
+    .classic-head {
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-sizing: border-box;
+      padding-right: 32rpx;
+      
+      .head-right {
+        display: flex;
+        align-items: center;
+      }
+    }
     
     .content-footer {
       position: absolute;
@@ -149,6 +148,4 @@
       justify-content: center;
     }
   }
-  
-  
 </style>

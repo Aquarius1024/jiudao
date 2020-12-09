@@ -1,18 +1,19 @@
 {
   "pages": [
     "pages/classic/classic",
-    "pages/book/book",
+    "pages/books/books",
     "pages/like/like"
   ],
   "subPackages": [],
   "window": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "uni-app",
-    "navigationBarBackgroundColor": "#F8F8F8",
+    "navigationBarBackgroundColor": "#fff",
     "backgroundColor": "#F8F8F8"
   },
   "tabBar": {
     "selectedColor": "#2b2b2b",
+    "borderStyle": "white",
     "list": [
       {
         "text": "流行",
@@ -22,7 +23,7 @@
       },
       {
         "text": "书单",
-        "pagePath": "pages/book/book",
+        "pagePath": "pages/books/books",
         "iconPath": "static/images/tab/book.png",
         "selectedIconPath": "static/images/tab/book@highlight.png"
       },
@@ -34,6 +35,5 @@
       }
     ]
   },
-  "usingComponents": {},
-  "sitemapLocation": "sitemap.json"
+  "usingComponents": {}
 }

@@ -14,10 +14,40 @@ page {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
+  background-color: #fff;
+}
+.page-wrap .page-head {
+  height: 128rpx;
+  /* line-height: 128rpx; */
+  box-sizing: border-box;
+  /* border-bottom: 1px solid #ddd; */
+  box-shadow: 0 2rpx 16rpx #ddd;
+  -webkit-flex-shrink: 0;
+          flex-shrink: 0;
 }
 .page-wrap .page-content {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
           flex: 1;
+  /* border: 1px solid #333333; */
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* flex布局 */
+.flex-ajc, .flex-ac, .flex-jc {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.flex-ajc, .flex-ac {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.flex-ajc, .flex-jc {
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
 }
 

@@ -53,19 +53,19 @@
     padding: 24rpx;
     
     .epsoide-index {
-      font-size: 34rpx;
+      font-size: 40rpx;
       box-sizing: border-box;
       // border-right: 4rpx solid #333333;
       
       .index {
-        font-size: 64rpx;
+        font-size: 72rpx;
         font-weight: 600;
       }
       
       &::after {
         content: '';
         display: inline-block;
-        height: 48rpx;
+        height: 56rpx;
         width: 0;
         border: 2rpx solid #333;
         margin: 0 12rpx;
@@ -80,7 +80,7 @@
       padding-bottom: 4rpx;
       
       .month {
-        font-size: 30rpx;
+        font-size: 32rpx;
       }
       
       .year {

@@ -61,7 +61,7 @@
     justify-content: center;
     // border: 1px solid red;
     box-sizing: border-box;
-    height: 64rpx;
+    // height: 64rpx;
     
     .img-wrap {
       width: 40rpx;

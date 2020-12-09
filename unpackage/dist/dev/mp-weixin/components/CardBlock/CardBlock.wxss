@@ -1,0 +1,25 @@
+.card-block .card-title {
+  border-left: 16rpx solid #333;
+  padding-left: 32rpx;
+  margin: 32rpx 16rpx 0;
+  font-size: 32rpx;
+}
+.card-block .card-content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+          justify-content: flex-start;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+  padding: 16rpx 0;
+}
+.card-block .card-content .tags {
+  background-color: #eee;
+  font-size: 28rpx;
+  padding: 8rpx 24rpx;
+  margin: 16rpx;
+  color: #999;
+}
+

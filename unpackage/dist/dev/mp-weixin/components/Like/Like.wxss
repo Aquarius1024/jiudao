@@ -9,7 +9,6 @@
   -webkit-justify-content: center;
           justify-content: center;
   box-sizing: border-box;
-  height: 64rpx;
 }
 .like-wrap .img-wrap {
   width: 40rpx;

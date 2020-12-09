@@ -5,7 +5,7 @@
       <image v-if="type === 'movie'" class="image-tag" src="/static/resource/movie/电影。@2x.png" mode="heightFix"></image>
       <image v-if="type === 'article'" class="image-tag" src="/static/resource/movie/诗句.png" mode="heightFix"></image>
     </view>
-    <view class="movie-content" :style="{textAlign: content.length>15 ? 'left' : 'center'}">
+    <view class="movie-content">
       {{content}}
     </view>
 	</view>
@@ -59,6 +59,9 @@
       padding: 0 80rpx;
       line-height: 1.5;
       color: #333;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
 </style>

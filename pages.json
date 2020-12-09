@@ -5,7 +5,7 @@
       "navigationBarTitleText": "流行"
     }
   }, {
-    "path": "pages/book/book",
+    "path": "pages/books/books",
     "style": {
       "navigationBarTitleText": "书单"
     }
@@ -18,6 +18,7 @@
 
   "tabBar": {
     "selectedColor": "#2b2b2b",
+    "borderStyle": "white",
     "list": [{
       "text": "流行",
       "pagePath": "pages/classic/classic",
@@ -25,7 +26,7 @@
       "selectedIconPath": "static/images/tab/classic@highlight.png"
     }, {
       "text": "书单",
-      "pagePath": "pages/book/book",
+      "pagePath": "pages/books/books",
       "iconPath": "static/images/tab/book.png",
       "selectedIconPath": "static/images/tab/book@highlight.png"
     }, {
@@ -39,7 +40,10 @@
   "globalStyle": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "uni-app",
-    "navigationBarBackgroundColor": "#F8F8F8",
+    "navigationBarBackgroundColor": "#fff",
+    // #ifdef H5
+    "navigationStyle": "custom",
+    // #endif
     "backgroundColor": "#F8F8F8"
   }
 }

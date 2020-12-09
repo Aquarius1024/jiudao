@@ -9,17 +9,17 @@
   padding: 24rpx;
 }
 .epsoide-wrap .epsoide-index {
-  font-size: 34rpx;
+  font-size: 40rpx;
   box-sizing: border-box;
 }
 .epsoide-wrap .epsoide-index .index {
-  font-size: 64rpx;
+  font-size: 72rpx;
   font-weight: 600;
 }
 .epsoide-wrap .epsoide-index::after {
   content: '';
   display: inline-block;
-  height: 48rpx;
+  height: 56rpx;
   width: 0;
   border: 2rpx solid #333;
   margin: 0 12rpx;
@@ -41,7 +41,7 @@
   padding-bottom: 4rpx;
 }
 .epsoide-wrap .epsoide-date .month {
-  font-size: 30rpx;
+  font-size: 32rpx;
 }
 .epsoide-wrap .epsoide-date .year {
   font-size: 28rpx;
